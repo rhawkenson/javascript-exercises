@@ -23,3 +23,4 @@ describe('removeFromArray', function() {
     expect(removeFromArray([1, 2, 3], "1", 3)).toEqual([1, 2]);
   });
 });
+  
