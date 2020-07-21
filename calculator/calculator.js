@@ -1,13 +1,17 @@
-function add () {
-	
+function add (num1, num2) {
+	return num1 + num2;
 }
 
-function subtract () {
-	
+function subtract (num1, num2) {
+	return num1 - num2;
 }
 
-function sum () {
-	
+function sum (arr) {
+	let total = 0;
+	for (let i=0; i<arr.length-1; i++){
+		total += arr[i];
+		return total;
+	} 
 }
 
 function multiply () {
