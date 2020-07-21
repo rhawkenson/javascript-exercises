@@ -8,22 +8,30 @@ function subtract (num1, num2) {
 
 function sum (arr) {
 	let total = 0;
-	for (let i=0; i<arr.length-1; i++){
+	for (let i=0; i<arr.length; i++){
 		total += arr[i];
-		return total;
-	} 
+		
+	} return total;
 }
 
-function multiply () {
-	
+function multiply (arr) {
+	let total = 1;
+	for (let i=0; i<arr.length; i++){
+		total *= arr[i];
+	} return total;
 }
 
-function power() {
-	
+
+function power(num1, num2) {
+	return Math.pow(num1, num2);
 }
 
-function factorial() {
-	
+function factorial(num) {
+	let total = 1;
+	while (num>0){
+		total *= num;
+		num--;
+	} return total;
 }
 
 module.exports = {
@@ -34,3 +42,5 @@ module.exports = {
     power,
 	factorial
 }
+
+//jasmine calculator.spec.js
